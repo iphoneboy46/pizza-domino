@@ -1,0 +1,40 @@
+input[type="radio"] {
+    display: none;
+}
+
+label:before {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    left: -35px;
+    content: '';
+    background: #fff;
+    border: 1px solid lightgray;
+}
+
+input[type="radio"]:checked ~ label:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: -30px;
+    content: '';
+    background:black;
+}
+
+input[type="radio"]:checked ~ label::before {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    padding: 10px;
+    top: -4px;
+    left: -35px;
+    content: '';
+    border: 1px solid black;
+}
+
+

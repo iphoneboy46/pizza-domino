@@ -1,0 +1,9 @@
+.active-filter{
+  color:red;
+}
+
+.line{
+  width:100%;
+  background-color: red;
+  height: 2px;
+}

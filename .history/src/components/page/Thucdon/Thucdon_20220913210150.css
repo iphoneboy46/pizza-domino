@@ -1,0 +1,21 @@
+.btn.active-filter{
+  color:red;
+  margin-bottom: -8px;
+  border-bottom: 4px solid red;
+  border-radius: 2px;
+}
+
+.active-filter-show{
+  display: block;
+}
+
+.btn-hidden{
+  display: none;
+}
+.btn-pizza{
+  display: flex;
+  background-color: white;
+}
+
+
+

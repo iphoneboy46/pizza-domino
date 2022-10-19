@@ -1,0 +1,42 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import Pizza from "../Pizza/Pizza";
+
+function Thucdon() {
+  return (
+    <div className="pt-[100px] flex">
+      <div className="w-[1515px]">
+        <div className="flex justify-around px-[120px] py-2 bg-yellowcustom font-semibold">
+          <div>
+            <Link to="/khuyenmai">Khuyến mãi mỗi ngày</Link>
+          </div>
+          <div className="active-filter">
+            <button>Pizza</button>
+          </div>
+          <div>
+            <button>Mỳ Ý</button>
+          </div>
+          <div>
+            <button>Món phụ</button>
+          </div>
+          <div>
+            <button>Tráng miệng</button>
+          </div>
+          <div>
+            <button>Nước uống</button>
+          </div>
+        </div>
+        <Pizza />
+      </div>
+      <div className="w-[395px] h-[850px]">
+        <img
+          className="w-[233px] h-[233px] m-auto"
+          src="https://dominos.vn/img/illustration/empty-cart.svg"
+          alt=""
+        />
+      </div>
+    </div>
+  );
+}
+
+export default Thucdon;

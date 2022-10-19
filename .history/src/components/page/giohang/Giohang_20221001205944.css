@@ -1,0 +1,33 @@
+.btn-khuyenMai {
+    border-top: 1px solid #0078ae;
+    border-bottom: 1px solid #0078ae;
+    background-color: white;
+    padding: 8px;
+    width: 100%;
+    margin-right: 10px;
+    position: relative;
+}
+
+.btn-khuyenMai::after{
+    content: "";
+    position: absolute;
+    background-image:url(../../../assets/images/jaggedLeft.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    left: -8px;
+    top: 0px;
+    width: 10px;
+    height: 100%;
+}
+
+.btn-khuyenMai::before{
+    content: "";
+    position: absolute;
+    background-image:url(../../../assets/images/jaggedRight.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    right: -8px;
+    top: 3px;
+    width: 10px;
+    height: 100%;
+}

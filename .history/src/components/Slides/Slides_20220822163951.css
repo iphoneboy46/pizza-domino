@@ -1,0 +1,11 @@
+.slick-arrow.slick-prev{
+    display: block !important;
+    position: absolute;
+    left: -80%;
+    top: 50%;
+    width: 100%;
+    color: black;
+    background-color: red;
+    z-index: 10;
+   
+}

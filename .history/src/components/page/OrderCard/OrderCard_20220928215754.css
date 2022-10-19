@@ -1,0 +1,11 @@
+.btn-khuyenMai {
+    border-top: 1px solid #0078ae;
+    border-bottom: 1px solid #0078ae;
+    padding: 10px;
+    width: 80%;
+}
+
+.btn-khuyenMai::after{
+    content: "";
+    background-image:url(data:image/svg+xml,%3csvg width='7' height='40' viewBox='0 0 7 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.86496 0L6.52549 0.814509L1.99006 3.24563L5.91698 5.98217L1.91698 8.76962L5.91698 11.5571L1.91698 14.3445L5.91698 17.132L1.91698 19.9195L5.91698 22.7069L1.91698 25.4944L5.91698 28.2818L1.91698 31.0693L5.91698 33.8567L1.99006 36.5933L6.52549 39.0244L5.86496 39.8389L1.43051e-07 36.6951L4.07308 33.8567L0.0730739 31.0693L4.07307 28.2818L0.0730743 25.4944L4.07307 22.7069L0.0730743 19.9195L4.07307 17.132L0.0730741 14.3445L4.07307 11.5571L0.0730742 8.76962L4.07307 5.98217L0 3.14379L5.86496 0Z' fill='%230078AE'/%3e%3c/svg%3e)
+}

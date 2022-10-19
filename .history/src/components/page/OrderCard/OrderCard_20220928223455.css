@@ -1,0 +1,17 @@
+.btn-khuyenMai {
+    border-top: 1px solid #0078ae;
+    border-bottom: 1px solid #0078ae;
+    padding: 10px;
+    width: 80%;
+    position: relative;
+}
+
+.btn-khuyenMai::after{
+    content: "";
+    position: absolute;
+    top: 10;
+    background-image:url(../../../assets/images/jaggedRight.png);
+    background-color: red;
+    width: 10px;
+    height: 100%;
+}

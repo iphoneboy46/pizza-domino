@@ -1,0 +1,11 @@
+.btn-pizza{
+    display: flex;
+    background-color: white;
+    padding: 5px;
+    border-radius: 2px;
+  }
+
+.btn-pizza.active-choose{
+    background-color: red;
+    color:white;
+}

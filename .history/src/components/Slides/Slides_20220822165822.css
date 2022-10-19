@@ -1,0 +1,31 @@
+.slick-arrow.slick-prev{
+    display: block !important;
+    position: absolute;
+    left:-40%;
+    top: 45%;
+    transform: translate(0%,-50%);
+    width: 100%;
+    color: black;
+    z-index: 100;
+}
+
+.slick-arrow.slick-next{
+    display: block !important;
+    position: absolute;
+    right:-50%;
+    top: 45%;
+    transform: translate(0%,-50%);
+    width: 100%;
+    color: black;
+    z-index: 100;
+}
+
+.slick-prev:before{
+    content: url(https://dominos.vn/img/icon/slider-back.svg) !important;
+    font-size: 100px !important;
+}
+
+.slick-next:before{
+    content: url(https://dominos.vn/img/icon/slider-next.svg) !important;
+    font-size: 100px !important;
+}

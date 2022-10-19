@@ -1,0 +1,4 @@
+.pass-word:focus-within{
+    border-color:#80bdff !important;
+    border-style: solid;
+}

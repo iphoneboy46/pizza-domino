@@ -1,0 +1,22 @@
+.search-address{
+    background: url(../../assets/images/deep-see.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    position: relative;
+    padding: 24px 0;
+}
+
+.active{
+    background-color: white;
+    color: red;
+    border: none;
+    height: 60px;
+    z-index: 3;
+    margin-bottom: -10px;
+}
+
+.inputAddress.length:focus-within ~ a{
+    background-color: red;
+
+}

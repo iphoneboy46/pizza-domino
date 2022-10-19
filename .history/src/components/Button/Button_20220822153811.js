@@ -1,0 +1,11 @@
+import React from 'react'
+
+function Button(props) {
+  return (
+    <button className="" onClick={props.onClick ? () => props.onClick : null}>
+        {props.children}
+    </button>
+  )
+}
+
+export default Button

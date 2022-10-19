@@ -1,0 +1,15 @@
+.slick-arrow.slick-prev{
+    display: block !important;
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    width: 100%;
+    color: black;
+    background-color: red;
+    z-index: 10;
+   
+}
+
+.slick-prev::before{
+    font-size: 100px;
+}

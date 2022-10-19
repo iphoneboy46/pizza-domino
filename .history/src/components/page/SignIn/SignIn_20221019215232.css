@@ -1,0 +1,25 @@
+.email:focus{
+    border-color:#80bdff !important;
+    border-style: solid;
+    outline: none;
+    box-shadow: 0px 0px 12px #80bdff;
+}
+
+.pass-word:focus{
+    border-color:#80bdff !important;
+    border-style: solid;
+    outline: none;
+    box-shadow: 0px 0px 12px #80bdff;
+}
+
+label:before {
+    width: 0px !important;
+    height: 0px;
+    border-radius: 0%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    background: transparent;
+    border: none !important;
+}

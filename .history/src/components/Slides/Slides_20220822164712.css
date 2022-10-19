@@ -1,0 +1,16 @@
+.slick-arrow.slick-prev{
+    display: block !important;
+    position: absolute;
+    left:10%;
+    top: 50%;
+    width: 100%;
+    color: black;
+    background-color: red;
+    z-index: 10;
+   
+}
+
+.slick-prev:before{
+    content: url(https://dominos.vn/img/icon/slider-back.svg) !important;
+    font-size: 100px !important;
+}

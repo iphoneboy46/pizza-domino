@@ -1,0 +1,6 @@
+.pass-word:focus{
+    border-color:#80bdff !important;
+    border-style: solid;
+    outline: none;
+    box-shadow: 0px 0px 15px #80bdff;
+}
