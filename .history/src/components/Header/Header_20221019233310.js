@@ -69,7 +69,7 @@ function Header() {
                 <>
                   <li
                     key={i}
-                    className="lg:text-[15px] md:text-[10px]  text-white font-extrabold uppercase lg:ml-5 md:ml-1 h-[100%] pl-5 pr-5 pt-8 pb-8 tracking-widest transition-all linear duration-500 hover:bg-[#00628f] hover:text-wh"
+                    className="lg:text-[15px] md:text-[10px] w-[100%] text-white font-extrabold uppercase lg:ml-5 md:ml-1 h-[100%] pl-5 pr-5 pt-8 pb-8 tracking-widest transition-all linear duration-500 hover:bg-[#00628f] hover:text-wh"
                   >
                     <Link className="pt-8 pb-8 w-[100%] text-center" to={page.to}>
                       {page.name}
