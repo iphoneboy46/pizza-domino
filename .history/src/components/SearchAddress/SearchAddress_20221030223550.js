@@ -21,7 +21,6 @@ function SearchAddress() {
   console.log(address);
 
   function handleActive1(index) {
-    setDelivery("/delivery")
     setActiveBtn(index);
     setDeliver("Giao hàng tận nơi");
     setTakeAway("");
@@ -90,7 +89,6 @@ function SearchAddress() {
         <div className="bg-[#fdedef] flex justify-center p-[32px] rounded w-[100%] m-auto">
           <input
             type="text"
-            value={address}
             className="py-[12px] px-[8px] lg:w-[80%] md:w-[80%] outline-[#80bdff] text-[#495057] font-extrabold rounded-l-lg inputAddress"
             placeholder="Vui lòng nhập địa chỉ nhận hàng"
             onChange={(e) => {
@@ -99,7 +97,7 @@ function SearchAddress() {
             ref={inputRef}
           />
           <Link
-            to={delivery}
+            to="/thucdon"
             onClick={handleAddress}
             className="btnSubAddress bg-[#0078ae] opacity-[0.4] pointer-events-none py-[12px] px-[16px] text-white rounded-r-lg "
           >

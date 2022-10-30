@@ -21,7 +21,7 @@ function SearchAddress() {
   console.log(address);
 
   function handleActive1(index) {
-    setDelivery("/delivery")
+    setDelivery("/delivey")
     setActiveBtn(index);
     setDeliver("Giao hàng tận nơi");
     setTakeAway("");
@@ -90,7 +90,6 @@ function SearchAddress() {
         <div className="bg-[#fdedef] flex justify-center p-[32px] rounded w-[100%] m-auto">
           <input
             type="text"
-            value={address}
             className="py-[12px] px-[8px] lg:w-[80%] md:w-[80%] outline-[#80bdff] text-[#495057] font-extrabold rounded-l-lg inputAddress"
             placeholder="Vui lòng nhập địa chỉ nhận hàng"
             onChange={(e) => {

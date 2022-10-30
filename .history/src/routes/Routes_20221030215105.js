@@ -17,7 +17,7 @@ const publicRoutes = [
     {path:'/Donhang', component:Donhang},
     {path:'/Cuahang', component:Cuahang},
     {path:'/Location', component:Location},
-    {path:'/cart', component:Giohang},
+    {path:'/cart', component:Giohang}
     {path:'/delivery',component:Delivery}
 ]
 
