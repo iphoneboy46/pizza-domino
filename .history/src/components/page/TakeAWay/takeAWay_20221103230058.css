@@ -1,0 +1,6 @@
+.modal{
+    position:fixed;
+    inset: 0;
+    background-color: rgba(50, 48, 48, 0.116);
+    z-index: 9999;
+}
