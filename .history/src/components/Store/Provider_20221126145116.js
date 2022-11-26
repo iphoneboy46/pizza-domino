@@ -4,6 +4,7 @@ import Context from "./Context";
 
 function Provider({ children }) {
   console.log(data);
+  const [btnExits, setbtnExits] = useState(true);
   const [orderPizza, setOrderPizza] = useState([]);
   const [orderSideDishes, setOrderSideDishes] = useState([]);
   const [quantity, setQuantity] = useState(1);
@@ -11,11 +12,10 @@ function Provider({ children }) {
   const [menuOrders, setMenuOrders] = useState([]);
   const [orderAddress, setOrderAddress] = useState([]);
   const [takeAway, setTakeAway] = useState("");
-  const [deliver, setDeliver] = useState("");
+  const [deliver, setDeliver] = useState("Giao hàng tận nơi");
   const [checkedBase, setCheckedBase] = useState("Đế mỏng giòn");
   const [checkedSize, setCheckedSize] = useState("Cỡ 9 inch");
   const [checkedPrice1, setCheckedPrice1] = useState(189);
-
   const [options12, setOptions12] = useState(false);
   const [options9, setOptions9] = useState(false);
   const [checkedMore9, setCheckedMore9] = useState("");
@@ -26,6 +26,7 @@ function Provider({ children }) {
   const [checkedPrice3, setCheckedPrice3] = useState(0);
   const [checkedPrice4, setCheckedPrice4] = useState(0);
   const [checkedPrice5, setCheckedPrice5] = useState(0);
+  const [account,setAccount] = useState([]);
   const inputRef = useRef();
 
   const handlePizza = (pizza) => {
@@ -38,11 +39,18 @@ function Provider({ children }) {
     setQuantity(1)
   };
 
-  const handlePizzaEdit = (pizza) => {
+  const handlePizzaEdit = () => {
     const orderPizza = document.querySelector(".order-pizzaEdit");
     const content = document.querySelector(".content");
-    setMenuOrders(pizza);
     orderPizza.style.top = "11%";
+    content.classList.add("modal");
+    document.body.style.overflow = "hidden";
+  };
+
+  const handleSideDishesEdit = () => {
+    const orderDishes = document.querySelector(".order-DishesEdit");
+    const content = document.querySelector(".content");
+    orderDishes.style.top = "25%";
     content.classList.add("modal");
     document.body.style.overflow = "hidden";
   };
@@ -61,10 +69,19 @@ function Provider({ children }) {
     const orderSideDishes = document.querySelector(".order-SideDishes");
     const content = document.querySelector(".content");
     setOrderSideDishes(sideDishes);
-    orderSideDishes.style.top = "20%";
+    orderSideDishes.style.top = "25%";
     content.classList.add("modal");
     document.body.style.overflow = "hidden";
   };
+
+  function handleAddress() {
+    setOrderAddress({
+      address: address,
+      takeAway: takeAway,
+      deliver: deliver,
+    });
+  }
+
 
   // tinh tong quantity
 
@@ -76,28 +93,40 @@ function Provider({ children }) {
     return (sum += quantity);
   }, 0);
 
-  const priceOrder = menuOrders.map((order) => {
-    return order.price;
+  // tinh tong tien
+
+  const priceOrders = menuOrders.map((order) => {
+    return order.totalP;
   });
 
- 
+  console.log(menuOrders);
 
-  
+  let totalOrders = priceOrders.reduce((totalP, sum) => {
+    return (sum += totalP );
+  }, 0);
 
-  let totalOrderCard = 
-
-  
-
+  let totalOrderCard = totalOrders * totalQuantity
   console.log(totalOrderCard);
 
+  // IP
+  const [ip,setIP] = useState("!1m18!1m12!1m3!1d501726.00671526033!2d106.12087673863454!3d10.754939193630381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2zSOG7kyBDaMOtIE1pbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1665470875156!5m2!1svi!2s");
+  const handleIP = (ip) =>{
+    setIP(ip);
+  }
 
-  let totalOrders = priceOrder.reduce((price, sum) => {
-    return (sum += price);
-  }, 0);
 
   return (
     <Context.Provider
       value={{
+        handleAddress,
+        account,
+        setAccount,
+        ip,
+        setIP,
+        handleIP,
+        handleSideDishesEdit,
+        btnExits, 
+        setbtnExits,
         checkedPrice5,
         setCheckedPrice5,
         checkedPrice4,

@@ -12,7 +12,7 @@ function Provider({ children }) {
   const [menuOrders, setMenuOrders] = useState([]);
   const [orderAddress, setOrderAddress] = useState([]);
   const [takeAway, setTakeAway] = useState("");
-  const [deliver, setDeliver] = useState("");
+  const [deliver, setDeliver] = useState("Giao hàng tận nơi");
   const [checkedBase, setCheckedBase] = useState("Đế mỏng giòn");
   const [checkedSize, setCheckedSize] = useState("Cỡ 9 inch");
   const [checkedPrice1, setCheckedPrice1] = useState(189);
