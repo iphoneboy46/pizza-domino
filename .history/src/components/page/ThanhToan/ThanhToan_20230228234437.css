@@ -1,0 +1,95 @@
+.dat-hang > label{
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.dat-hang > label:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:black;
+    display: none;
+}
+
+.dat-hang > label::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    display: none;
+}
+
+
+/* .input-dat-hang{
+    display: block !important;
+} */
+
+.input-dat-hang:checked ~  label::after {
+    display: block;
+}
+
+
+
+.input-dat-hang:checked ~  label::before {
+    display: block;
+}
+
+.giao-hang > label{
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.giao-hang > label:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:black;
+    display: none;
+}
+
+.giao-hang > label::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    display: none;
+}
+
+
+/* .input-giao-hang{
+    display: block !important;
+} */
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+.dat-hang > label{
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.dat-hang > label:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:black;
+    display: none;
+}
+

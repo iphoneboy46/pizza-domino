@@ -1,0 +1,12 @@
+.dat-hang > span{
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.dat-hang > span::after{
+    
+}

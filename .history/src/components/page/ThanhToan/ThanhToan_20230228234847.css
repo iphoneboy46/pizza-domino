@@ -1,0 +1,59 @@
+.dat-thanh-toan > label{
+    width: 25px;
+    height: 25px;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.dat-thanh-toan > label:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:black;
+    display: none;
+}
+
+.dat-thanh-toan > label::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    display: none;
+}
+
+
+/* .input-dat-hang{
+    display: block !important;
+} */
+
+.input-thanh-toan:checked ~  label::after {
+    display: block;
+}
+
+
+
+.input-thanh-toan:checked ~  label::before {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
