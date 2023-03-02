@@ -90,7 +90,7 @@ export const options = [
     },
     {
       label: "14h 0p",
-      value: "14:0",
+      value: "14:00",
     },
     {
       label: "14h 10p",
@@ -114,7 +114,7 @@ export const options = [
     },
     {
       label: "15h 0p",
-      value: "15:0",
+      value: "15:00",
     },
     {
       label: "15h 10p",
@@ -138,7 +138,7 @@ export const options = [
     },
     {
       label: "16h 0p",
-      value: "16:0",
+      value: "16:00",
     },
     {
       label: "16h 10p",
@@ -162,7 +162,7 @@ export const options = [
     },
     {
       label: "17h 0p",
-      value: "17:0",
+      value: "17:00",
     },
     {
       label: "17h 10p",
@@ -186,7 +186,7 @@ export const options = [
     },
     {
       label: "18h 0p",
-      value: "18:0",
+      value: "18:00",
     },
     {
       label: "18h 10p",
@@ -210,7 +210,7 @@ export const options = [
     },
     {
       label: "19h 0p",
-      value: "19:0",
+      value: "19:00",
     },
     {
       label: "19h 10p",
@@ -234,7 +234,7 @@ export const options = [
     },
     {
       label: "20h 0p",
-      value: "20:0",
+      value: "20:00",
     },
     {
       label: "20h 10p",
@@ -258,7 +258,7 @@ export const options = [
     },
     {
       label: "21h 0p",
-      value: "21:0",
+      value: "21:00",
     },
     {
       label: "21h 10p",

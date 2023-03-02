@@ -210,7 +210,7 @@ export const options = [
     },
     {
       label: "19h 0p",
-      value: "19:0",
+      value: "19:00",
     },
     {
       label: "19h 10p",
@@ -234,7 +234,7 @@ export const options = [
     },
     {
       label: "20h 0p",
-      value: "20:0",
+      value: "20:00",
     },
     {
       label: "20h 10p",
@@ -258,7 +258,7 @@ export const options = [
     },
     {
       label: "21h 0p",
-      value: "21:0",
+      value: "21:00",
     },
     {
       label: "21h 10p",

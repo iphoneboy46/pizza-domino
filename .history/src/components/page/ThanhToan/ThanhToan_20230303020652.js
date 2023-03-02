@@ -314,8 +314,8 @@ function ThanhToan() {
 
     console.log(timeFull);
     let optionFilter = options.filter((op) => {
-      console.log(op.value >= timeFull);
-      return op.value > timeFull;
+      console.log(op.value > timeFull);
+      return op.value >= timeFull;
     });
 
     console.log(optionFilter);

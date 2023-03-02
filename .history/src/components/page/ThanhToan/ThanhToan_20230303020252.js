@@ -60,7 +60,6 @@ function ThanhToan() {
   const [tienmat, setTienmat] = useState("Tiền mặt");
   const [timeGH, setTimeGH] = useState();
   const [hoaDonDo, setHoaDonDo] = useState("");
-  const [timeFil,setTimeFil] = useState();
 
   const nameRef = useRef();
   const phoneRef = useRef();
@@ -69,7 +68,6 @@ function ThanhToan() {
   const addressRef = useRef();
   const maSoThueRef = useRef();
   const emailDienRef = useRef();
-
 
   const navigate = useNavigate();
 
@@ -314,7 +312,7 @@ function ThanhToan() {
 
     console.log(timeFull);
     let optionFilter = options.filter((op) => {
-      console.log(op.value >= timeFull);
+      console.log(op);
       return op.value > timeFull;
     });
 

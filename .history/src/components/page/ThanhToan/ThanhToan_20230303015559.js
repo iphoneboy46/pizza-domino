@@ -60,7 +60,6 @@ function ThanhToan() {
   const [tienmat, setTienmat] = useState("Tiền mặt");
   const [timeGH, setTimeGH] = useState();
   const [hoaDonDo, setHoaDonDo] = useState("");
-  const [timeFil,setTimeFil] = useState();
 
   const nameRef = useRef();
   const phoneRef = useRef();
@@ -69,7 +68,6 @@ function ThanhToan() {
   const addressRef = useRef();
   const maSoThueRef = useRef();
   const emailDienRef = useRef();
-
 
   const navigate = useNavigate();
 
@@ -80,10 +78,6 @@ function ThanhToan() {
   let addressClient = orderAddress.address;
   let Delivery = orderAddress.deliver;
   let takeAway = orderAddress.takeAway;
-
-  console.log(timeFull); 
-
-  
 
 
   let listProduct = {
@@ -311,17 +305,15 @@ function ThanhToan() {
   });
 
   useEffect(() => {
-
-    console.log(timeFull);
     let optionFilter = options.filter((op) => {
-      console.log(op.value >= timeFull);
-      return op.value > timeFull;
+      console.log(op);
+      return op >= timeFull;
     });
 
     console.log(optionFilter);
 
     setTimeOp(optionFilter);
-  },[]);
+  }, []);
 
   const handleChecked = (id) => {
     setChecked(id);

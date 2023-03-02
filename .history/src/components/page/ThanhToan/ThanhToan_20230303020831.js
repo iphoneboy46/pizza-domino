@@ -313,9 +313,9 @@ function ThanhToan() {
   useEffect(() => {
 
     console.log(timeFull);
-    let optionFilter = options.filter((op) => {
+    let optionFilter = options.map((op) => {
       console.log(op.value >= timeFull);
-      return op.value > timeFull;
+      return op.value >= timeFull;
     });
 
     console.log(optionFilter);

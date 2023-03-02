@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import Context from "../../Store/Context";
 
 function DonHangDaDat() {
-  const { listDonHang, totalOrders, phoneFilter, } = useContext(Context);
+  const { listDonHang, totalOrders, phoneFilter,setMenuOrders } = useContext(Context);
   const [isNone, setIsNone] = useState(false);
 
   

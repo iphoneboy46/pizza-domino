@@ -60,7 +60,6 @@ function ThanhToan() {
   const [tienmat, setTienmat] = useState("Tiền mặt");
   const [timeGH, setTimeGH] = useState();
   const [hoaDonDo, setHoaDonDo] = useState("");
-  const [timeFil,setTimeFil] = useState();
 
   const nameRef = useRef();
   const phoneRef = useRef();
@@ -69,7 +68,6 @@ function ThanhToan() {
   const addressRef = useRef();
   const maSoThueRef = useRef();
   const emailDienRef = useRef();
-
 
   const navigate = useNavigate();
 
@@ -80,10 +78,6 @@ function ThanhToan() {
   let addressClient = orderAddress.address;
   let Delivery = orderAddress.deliver;
   let takeAway = orderAddress.takeAway;
-
-  console.log(timeFull); 
-
-  
 
 
   let listProduct = {
@@ -311,17 +305,12 @@ function ThanhToan() {
   });
 
   useEffect(() => {
-
-    console.log(timeFull);
     let optionFilter = options.filter((op) => {
-      console.log(op.value >= timeFull);
-      return op.value > timeFull;
+      return op.value >= timeFull;
     });
 
-    console.log(optionFilter);
-
     setTimeOp(optionFilter);
-  },[]);
+  }, []);
 
   const handleChecked = (id) => {
     setChecked(id);
@@ -401,7 +390,7 @@ function ThanhToan() {
   return (
     <div className="relative">
       <div className="content"></div>
-      <div className="alert-added-thanh-toan hidden border-2 border-[#54bb10] w-[350px] py-2 px-1 text-center font-bold text-[#54bb10] bg-white rounded-md fixed left-[50%] -translate-x-[50%] z-20  lg:top-[100px] md:top-[100px] top-[100px] ">
+      <div className="alert-added-thanh-toan hidden border-2 border-[#54bb10] w-[350px] py-2 px-1 text-center font-bold text-[#54bb10] bg-white rounded-md fixed left-[50%] -translate-x-[50%] z-20  lg:top-[100px] md:top-[100px] top-[200px] ">
         <i class="fa-solid fa-check"></i> Bạn đã đặt hàng thành công
       </div>
       <div className="alert-thanh-toan fixed top-[-500%] left-[50%] -translate-x-[50%] -translate-y-[50%] lg:w-[30%] md:w-[80%] w-[90%] bg-[#F2F4F8] rounded-lg lg:h-[280px] md:h-[auto] m-[auto]  flex justify-center items-center flex-col px-10 duration-7000 ease-linear z-[900] ">
@@ -434,7 +423,7 @@ function ThanhToan() {
           </button>
         </div>
       </div>
-      <div className="alert-thanh-toan-2 fixed top-[-500%] left-[50%] -translate-x-[50%] -translate-y-[50%] lg:w-[20%] md:w-[80%] w-[90%]  bg-[#F2F4F8] rounded-lg lg:h-[280px] md:h-[auto] m-[auto] flex justify-center items-center flex-col px-10 duration-7000 ease-linear z-[900] py-5 ">
+      <div className="alert-thanh-toan-2 fixed top-[-500%] left-[50%] -translate-x-[50%] -translate-y-[50%] lg:w-[20%] md:w-[80%] w-[90%]  bg-[#F2F4F8] rounded-lg lg:h-[280px] md:h-[auto] m-[auto] flex justify-center items-center flex-col px-10 duration-7000 ease-linear z-[900] ">
         <i
           onClick={handleCloseThanhToan2}
           className="fa-solid fa-xmark absolute top-0 right-0 bg-[#E31837] text-white py-2 px-4 text-3xl w-[auto] rounded-tr-lg"

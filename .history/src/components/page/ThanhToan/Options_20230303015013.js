@@ -18,7 +18,7 @@ export const options = [
     },
     {
       label: "11h 0p",
-      value: "11:0",
+      value: "11:00",
     },
     {
       label: "11h 10p",
@@ -42,7 +42,7 @@ export const options = [
     },
     {
       label: "12h 0p",
-      value: "12:0",
+      value: "12:00",
     },
     {
       label: "12h 10p",
@@ -66,15 +66,15 @@ export const options = [
     },
     {
       label: "13h 0p",
-      value: "13:0",
+      value: "13:00",
     },
     {
       label: "13h 10p",
-      value: "13:10",
+      value: "13h:10",
     },
     {
       label: "13h 20p",
-      value: "13:20",
+      value: "13h:20",
     },
     {
       label: "13h 30p",
@@ -90,7 +90,7 @@ export const options = [
     },
     {
       label: "14h 0p",
-      value: "14:0",
+      value: "14:00",
     },
     {
       label: "14h 10p",
@@ -102,170 +102,170 @@ export const options = [
     },
     {
       label: "14h 30p",
-      value: "14:30",
+      value: "14h 30p",
     },
     {
       label: "14h 40p",
-      value: "14:40",
+      value: "14h 40p",
     },
     {
       label: "14h 50p",
-      value: "14:50",
+      value: "14h 50p",
     },
     {
       label: "15h 0p",
-      value: "15:0",
+      value: "15h 0p",
     },
     {
       label: "15h 10p",
-      value: "15:10",
+      value: "15h 10p",
     },
     {
       label: "15h 20p",
-      value: "15:20",
+      value: "15h 20p",
     },
     {
       label: "15h 30p",
-      value: "15:30",
+      value: "15h 30p",
     },
     {
       label: "15h 40p",
-      value: "15:40",
+      value: "15h 40p",
     },
     {
       label: "15h 50p",
-      value: "15:50",
+      value: "15h 50p",
     },
     {
       label: "16h 0p",
-      value: "16:0",
+      value: "16h 0p",
     },
     {
       label: "16h 10p",
-      value: "16:10",
+      value: "16h 10p",
     },
     {
       label: "16h 20p",
-      value: "16:20",
+      value: "16h 20p",
     },
     {
       label: "16h 30p",
-      value: "16:30",
+      value: "16h 30p",
     },
     {
       label: "16h 40p",
-      value: "16:40",
+      value: "16h 40p",
     },
     {
       label: "16h 50p",
-      value: "16:50",
+      value: "16h 50p",
     },
     {
       label: "17h 0p",
-      value: "17:0",
+      value: "17h 0p",
     },
     {
       label: "17h 10p",
-      value: "17:10",
+      value: "17h 10p",
     },
     {
       label: "17h 20p",
-      value: "17:20",
+      value: "17h 20p",
     },
     {
       label: "17h 30p",
-      value: "17:30",
+      value: "17h 30p",
     },
     {
       label: "17h 40p",
-      value: "17:40",
+      value: "17h 40p",
     },
     {
       label: "17h 50p",
-      value: "17:50",
+      value: "17h 50p",
     },
     {
       label: "18h 0p",
-      value: "18:0",
+      value: "18h 0p",
     },
     {
       label: "18h 10p",
-      value: "18:10",
+      value: "18h 10p",
     },
     {
       label: "18h 20p",
-      value: "18:20",
+      value: "18h 20p",
     },
     {
       label: "18h 30p",
-      value: "18:30",
+      value: "18h 30p",
     },
     {
       label: "18h 40p",
-      value: "18:40",
+      value: "18h 40p",
     },
     {
       label: "18h 50p",
-      value: "18:50",
+      value: "18h 50p",
     },
     {
       label: "19h 0p",
-      value: "19:0",
+      value: "19h 0p",
     },
     {
       label: "19h 10p",
-      value: "19:10",
+      value: "19h 10p",
     },
     {
       label: "19h 20p",
-      value: "19:20",
+      value: "19h 20p",
     },
     {
       label: "19h 30p",
-      value: "19:30",
+      value: "19h 30p",
     },
     {
       label: "19h 40p",
-      value: "19:40",
+      value: "19h 40p",
     },
     {
       label: "19h 50p",
-      value: "19:50",
+      value: "19h 50p",
     },
     {
       label: "20h 0p",
-      value: "20:0",
+      value: "20h 0p",
     },
     {
       label: "20h 10p",
-      value: "20:10",
+      value: "20h 10p",
     },
     {
       label: "20h 20p",
-      value: "20:20",
+      value: "20h 20p",
     },
     {
       label: "20h 30p",
-      value: "20:30",
+      value: "20h 30p",
     },
     {
       label: "20h 40p",
-      value: "20:40",
+      value: "20h 40p",
     },
     {
       label: "20h 50p",
-      value: "20:50",
+      value: "20h 50p",
     },
     {
       label: "21h 0p",
-      value: "21:0",
+      value: "21h 0p",
     },
     {
       label: "21h 10p",
-      value: "21:10",
+      value: "21h 10p",
     },
     {
       label: "21h 20p",
-      value: "21:20",
+      value: "21h 20p",
     },
   ];
