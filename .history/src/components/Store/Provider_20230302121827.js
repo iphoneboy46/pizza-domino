@@ -37,7 +37,7 @@ function Provider({ children }) {
   );
   const [nameEditMonPhu, setNameEditMonPhu] = useState("");
   const [ghiChu, setGhiChu] = useState(
-    JSON.parse(localStorage.getItem("ghichu")) || ""
+    JSON.parse(localStorage.getItem("ghichu") ?? "")
   );
   const inputRef = useRef();
 

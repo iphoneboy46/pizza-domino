@@ -33,11 +33,11 @@ function Provider({ children }) {
   const [checkedPrice4, setCheckedPrice4] = useState(0);
   const [checkedPrice5, setCheckedPrice5] = useState(0);
   const [account, setAccount] = useState(
-    JSON.parse(localStorage.getItem("account")) || []
+    JSON.parse(localStorage.getItem("account")) ?? []
   );
   const [nameEditMonPhu, setNameEditMonPhu] = useState("");
   const [ghiChu, setGhiChu] = useState(
-    JSON.parse(localStorage.getItem("ghichu")) || ""
+    JSON.parse(localStorage.getItem("ghichu") ?? "")
   );
   const inputRef = useRef();
 

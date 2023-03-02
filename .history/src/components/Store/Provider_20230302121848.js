@@ -9,7 +9,7 @@ function Provider({ children }) {
   const [orderSideDishes, setOrderSideDishes] = useState([]);
   const [quantity, setQuantity] = useState(1);
   const [address, setAddress] = useState(
-    JSON.parse(localStorage.getItem("address")) || ""
+    JSON.parse(localStorage.getItem("address"))
   );
   const [menuOrders, setMenuOrders] = useState(
     JSON.parse(localStorage.getItem("menuOrders")) || []
@@ -37,7 +37,7 @@ function Provider({ children }) {
   );
   const [nameEditMonPhu, setNameEditMonPhu] = useState("");
   const [ghiChu, setGhiChu] = useState(
-    JSON.parse(localStorage.getItem("ghichu")) || ""
+    JSON.parse(localStorage.getItem("ghichu") ?? "")
   );
   const inputRef = useRef();
 
