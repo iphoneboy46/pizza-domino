@@ -28,17 +28,6 @@ function App() {
     content.classList.add("modal");
     loginForm.style.top = `50%`;
     loginForm.style.opacity = "1";
-
-    const menuMb = document.querySelector(".menu-Mobile");
-    menuMb.style.left = "-100%";
-    setbtnExits(true);
-    
-  }
-
-  const handleLog = () =>{
-    setAccount([])
-
-    handleClick()
   }
  
 
@@ -50,16 +39,9 @@ function App() {
         <div id="mb"></div>
         <div className="menu-Mobile absolute top-[50px] h-[100vh] left-[-100%] bottom-0 right-0 bg-[#004666] z-[3000] w-[100%] py-10 transition-all duration-500 linear lg:hidden md:hidden sm:block">
           <ul className="text-white font-semibold uppercase flex flex-col justify-between px-2 h-[80vh]">
-            { account.displayName ? 
-            <li className="cursor-pointer" onClick={handleLog}>
-              đăng xuất
-            </li>
-            :
             <li onClick={handleClickDN}>
               <Link to="">Đăng nhập / Tạo tài khoản</Link>
             </li>
-
-            }
             <li onClick={handleClick}>
               <Link to="/EVoucher">Mã e-voucher</Link>
             </li>

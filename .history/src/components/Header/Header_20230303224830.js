@@ -60,8 +60,6 @@ function Header() {
   }
 
   const handleLogout = () =>{
-    setAccount([])
-    setIsLogout(false)
 
   }
 
@@ -117,7 +115,7 @@ function Header() {
                 </div>
                 {isLogout && <div className="absolute bg-white w-[70%] p-1 z-50">
                   {" "}
-                  <h2 onClick={handleLogout} className="text-center font-bold uppercase cursor-pointer">đăng xuất</h2>
+                  <h2 onClick={handleLogout} className="text-center font-bold uppercase">đăng xuất</h2>
                 </div>}
               </div>
             ) : (

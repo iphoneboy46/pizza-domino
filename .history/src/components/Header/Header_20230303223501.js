@@ -28,8 +28,7 @@ const pages = [
 ];
 
 function Header() {
-  const { btnExits, setbtnExits, totalQuantity, account,setAccount } = useContext(Context);
-  const [isLogout,setIsLogout] = useState(false);
+  const { btnExits, setbtnExits, totalQuantity, account } = useContext(Context);
 
   const handleMenu = () => {
     const menuMb = document.querySelector(".menu-Mobile");
@@ -55,16 +54,6 @@ function Header() {
     loginForm.style.opacity = "1";
   };
 
-  const handleClick = () =>{
-    setIsLogout(!isLogout)
-  }
-
-  const handleLogout = () =>{
-    setAccount([])
-    setIsLogout(false)
-
-  }
-
   return (
     <div>
       <div className="bg-[#004666] lg:flex md:flex p-[16px] w-[100%] h-[80px] items-center justify-between fixed z-[2000] overflow-hidden hidden">
@@ -82,10 +71,7 @@ function Header() {
                     key={i}
                     className="lg:text-[15px] md:text-[10px]  text-white font-extrabold uppercase lg:ml-5 md:ml-1 h-[100%] pl-5 pr-5 pt-8 pb-8 tracking-widest transition-all linear duration-500 hover:bg-[#00628f] hover:text-wh"
                   >
-                    <Link
-                      className="pt-8 pb-8 w-[100%] text-center"
-                      to={page.to}
-                    >
+                    <Link className="pt-8 pb-8 w-[100%] text-center" to={page.to}>
                       {page.name}
                     </Link>
                   </li>
@@ -109,16 +95,13 @@ function Header() {
           </div>
           <div className="relative flex items-center">
             {account.displayName ? (
-              <div className="w-[100%]">
-                <div className="relative w-[100%]">
-                  <h1 onClick={handleClick} className="text-white font-bold w-[100%] truncate flex items-center cursor-pointer select-none">
-                    Hi {account.displayName} <i className="fa-solid fa-caret-down mx-2"></i>
+              <div>
+                <div>
+                  <h1 className="text-white font-bold w-[100%] truncate">
+                    Hi {account.displayName}
                   </h1>
                 </div>
-                {isLogout && <div className="absolute bg-white w-[70%] p-1 z-50">
-                  {" "}
-                  <h2 onClick={handleLogout} className="text-center font-bold uppercase cursor-pointer">đăng xuất</h2>
-                </div>}
+               <div> <h2>đăng xuất</h2></div>
               </div>
             ) : (
               <button

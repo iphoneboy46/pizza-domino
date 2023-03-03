@@ -61,8 +61,6 @@ function Header() {
 
   const handleLogout = () =>{
     setAccount([])
-    setIsLogout(false)
-
   }
 
   return (

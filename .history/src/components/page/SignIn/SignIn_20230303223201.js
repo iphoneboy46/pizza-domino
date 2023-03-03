@@ -37,16 +37,13 @@ function SignIn() {
             setAccount(user)
             const success = document.querySelector(".login-success");
             success.style.display = "flex";
-            const alertErr = document.querySelector(".alert-signIn");
-            alertErr.style.display = "none";
-
             // ...
           })
           .catch((error) => {
             const alertErr = document.querySelector(".alert-signIn")
             const errorCode = error.code;
             const errorMessage = error.message;
-            alertErr.style.display = "block";
+            
           });
       }}
     >

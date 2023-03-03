@@ -28,7 +28,7 @@ const pages = [
 ];
 
 function Header() {
-  const { btnExits, setbtnExits, totalQuantity, account,setAccount } = useContext(Context);
+  const { btnExits, setbtnExits, totalQuantity, account } = useContext(Context);
   const [isLogout,setIsLogout] = useState(false);
 
   const handleMenu = () => {
@@ -56,12 +56,6 @@ function Header() {
   };
 
   const handleClick = () =>{
-    setIsLogout(!isLogout)
-  }
-
-  const handleLogout = () =>{
-    setAccount([])
-    setIsLogout(false)
 
   }
 
@@ -111,13 +105,13 @@ function Header() {
             {account.displayName ? (
               <div className="w-[100%]">
                 <div className="relative w-[100%]">
-                  <h1 onClick={handleClick} className="text-white font-bold w-[100%] truncate flex items-center cursor-pointer select-none">
+                  <h1 onClick={handleClick} className="text-white font-bold w-[100%] truncate flex items-center cursor-pointer">
                     Hi {account.displayName} <i className="fa-solid fa-caret-down mx-2"></i>
                   </h1>
                 </div>
                 {isLogout && <div className="absolute bg-white w-[70%] p-1 z-50">
                   {" "}
-                  <h2 onClick={handleLogout} className="text-center font-bold uppercase cursor-pointer">đăng xuất</h2>
+                  <h2 className="text-center font-bold uppercase">đăng xuất</h2>
                 </div>}
               </div>
             ) : (

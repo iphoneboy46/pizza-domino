@@ -32,7 +32,7 @@ function App() {
     const menuMb = document.querySelector(".menu-Mobile");
     menuMb.style.left = "-100%";
     setbtnExits(true);
-    
+    document.body.style.overflow = "auto";
   }
 
   const handleLog = () =>{

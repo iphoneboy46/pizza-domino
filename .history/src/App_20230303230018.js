@@ -32,13 +32,11 @@ function App() {
     const menuMb = document.querySelector(".menu-Mobile");
     menuMb.style.left = "-100%";
     setbtnExits(true);
-    
+    document.body.style.overflow = "auto";
   }
 
   const handleLog = () =>{
     setAccount([])
-
-    handleClick()
   }
  
 
@@ -51,7 +49,7 @@ function App() {
         <div className="menu-Mobile absolute top-[50px] h-[100vh] left-[-100%] bottom-0 right-0 bg-[#004666] z-[3000] w-[100%] py-10 transition-all duration-500 linear lg:hidden md:hidden sm:block">
           <ul className="text-white font-semibold uppercase flex flex-col justify-between px-2 h-[80vh]">
             { account.displayName ? 
-            <li className="cursor-pointer" onClick={handleLog}>
+            <li onClick={handleLog}>
               đăng xuất
             </li>
             :

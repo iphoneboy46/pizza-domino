@@ -37,9 +37,6 @@ function SignIn() {
             setAccount(user)
             const success = document.querySelector(".login-success");
             success.style.display = "flex";
-            const alertErr = document.querySelector(".alert-signIn");
-            alertErr.style.display = "none";
-
             // ...
           })
           .catch((error) => {

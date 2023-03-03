@@ -506,7 +506,7 @@ function ThanhToan() {
                 </span>
               )}
 
-              <span className="mt-[10px] block text-xs font-bold my-5">
+              <span className="mt-[-10px] block text-xs font-bold my-5">
                 Kiểm tra đơn hàng ở hộp thư đến hoặc thư mục spam
               </span>
 
